@@ -1,13 +1,11 @@
-.carousel-inner {
-	height: 400px;
-	justify-content: center;
-}
+ 
 .img-responsive{
 	width:"100%";
 	position: relative;
-	justify-content: center;
+	height: 400px;
+	justify-content: center!important;
 }
-  /*
+ /*
 .item.active {
 	height: 310px!important;
 }
@@ -17,6 +15,10 @@
 	height: 100%!important;
 }
 
+.carousel-inner {
+	height: 400px;
+	justify-content: center;
+}
 .carousel-inner > .item > img {
     position: absolute;
     top: 0;
@@ -26,19 +28,27 @@
 }
 */
 
+.product{
+	transition: all .8s ease-in-out;
+	-webkit-transition: all .8s ease-in-out;
+}
+
+.product:hover{
+	transform: scale(1.2);
+}
 
 		body,
 		html {
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			background: #7abecc !important;
+			background: #041013 !important;
 		}
 		.user_card {
 			width: 350px;
 			margin-top: auto;
 			margin-bottom: auto;
-			background: #74cfbf;
+			background: #2a5850;
 			position: relative;
 			display: flex;
 			justify-content: center;
