@@ -1,0 +1,38 @@
+{% extends 'book-store/base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    
+<body>
+    {%if book %}
+    
+<center>
+    
+    <div class="card-group" >
+        <div class="card bg-dark text-white">
+            <span class="align-middle">
+                <img style="max-width: 30%; height: auto," src="/static{{book.photo.url}}" class="img-fluid" alt={{book.title}}>
+            </span>
+          
+          <div class="card-body">
+            <h5 class="card-title">{{book.title}}</h5>
+            <p class="card-text"> {{book.details}}</p>
+            <p class="card-text" style="font-weight: bold; color:rgb(62, 128, 36)"> Price: ${{book.price}}</p>
+            <a href="#" class="btn btn-primary">Add to cart</a>
+            <p class="card-text"><small class="text-muted">Last updated {{book.timeAdded}}</small></p>
+          </div>
+        </div>
+    
+    </center>
+
+    {%else%}
+    <p> No Such users are available</p>
+    {%endif%}
+
+</body>
+
+</html>
+
+{% endblock %}
