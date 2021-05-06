@@ -12,12 +12,22 @@
     
     <div class="card-group" >
         <div class="card bg-dark text-white">
+           
+
+        <button class="btn btn-dark" style="position: absolute; top: 0; right: 0" onClick="javascript:history.go(-1);">
+
+            <i class="fas fa-step-backward"></i> Back
+        </button>
+           
+
+           
+
             <span class="align-middle">
                 <img style="max-width: 30%; height: auto," src="/static{{book.photo.url}}" class="img-fluid" alt={{book.title}}>
             </span>
           
           <div class="card-body">
-            <h5 class="card-title">{{book.title}}</h5>
+            <h4 class="card-title">{{book.title}}</h4>
             <p class="card-text"> {{book.details}}</p>
             <p class="card-text" style="font-weight: bold; color:rgb(62, 128, 36)"> Price: ${{book.price}}</p>
             <a href="#" class="btn btn-primary">Add to cart</a>
